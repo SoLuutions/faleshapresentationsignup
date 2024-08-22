@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+        body {
+            background: #f9fbfd;
+            font-family: 'Quicksand', sans-serif;
+        }
+        #signup {
+            padding-top: 50px;
+        }
+        #signup .card {
+            background-color: #dfdbe5;
+            border-radius: 8px;
+            border: 0;
+            box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19), 0 12px 15px 0 rgba(0, 0, 0, 0);
+            overflow: hidden;
+        }
+        .form {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+        }
+        form label {
+            font-weight: bold;
+        }
+        form .form-control {
+            border-radius: 10px;
+            border-left: none;
+            height: 50px;
+        }
+        form .input-group>.input-group-prepend>.input-group-text {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-left-radius: 10px;
+            background: #dfdbe5;
+        }
+        button.btn {
+            border-radius: 10px;
+            margin-top: 15px;
+            font-size: .9rem;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-weight: 600;
+            height: 50px;
+        }
+        .btn-secondary {
+            background-color: #071622;
+        }
