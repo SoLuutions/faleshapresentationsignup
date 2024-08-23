@@ -1,4 +1,12 @@
-   document.getElementById('signupForm').addEventListener('submit', function(event) {
+document.addEventListener('DOMContentLoaded', function() {
+    const signupForm = document.getElementById('signupForm');
+
+    if (!signupForm) {
+        console.error('Sign-up form not found in the DOM');
+        return;
+    }
+
+    signupForm.addEventListener('submit', function(event) {
         event.preventDefault();
 
         const formData = new FormData(this);
@@ -28,10 +36,11 @@
             .then(response => {
                 console.log('Success:', response);
                 alert('Thank you for signing up!');
-                document.getElementById('signupForm').reset();
+                signupForm.reset();
             })
             .catch(error => {
                 console.error('Error:', error);
                 alert('Something went wrong. Please try again.');
             });
     });
+});
